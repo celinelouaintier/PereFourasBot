@@ -1,4 +1,11 @@
 import discord
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+token = os.getenv('DISCORD_TOKEN')
+# print(token)
 
 class MyClient(discord.Client):
     async def on_ready(self):
@@ -13,4 +20,4 @@ class MyClient(discord.Client):
             await message.channel.send('Hello {0.author.mention}'.format(message))
 
 client = MyClient()
-client.run('OTU3NjYyNjYxMjcxNzY5MTc4.YkCC2g.eVinxiATR3i_uDZiiuaOczS9Er4')
+client.run(token)

@@ -1,0 +1,2 @@
+# ignorer le token du bot quand on push sur github
+.env*
