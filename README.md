@@ -1,2 +1,2 @@
 # PereFourasBot
-The objective is to create a discord bot in python which give a new riddle everyday.
+The objective is to create a discord bot in Python which give a new riddle everyday.
